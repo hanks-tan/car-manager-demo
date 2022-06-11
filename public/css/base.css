@@ -1,0 +1,87 @@
+:root{
+  --my-dark-bgcolor: #2196f354;
+  --my-border-color: #5d6a89;
+  --my-font-color: #ccc;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+}
+.map{
+  height: 100vh;
+  width: 100%;
+}
+.ol-zoom{
+  display: none;
+}
+.search-box{
+  position: absolute;
+  margin: 1rem;
+  top: 0;
+}
+
+.info-box{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.input-with-select{
+  margin-bottom: 10px;
+  background-color: var(--my-dark-bgcolor);
+}
+.el-input__inner{
+  background-color: transparent;
+  border: 1px solid var(--my-border-color);
+}
+.el-input-group__append, .el-input-group__prepend{
+  background-color: transparent;
+  border: 1px solid var(--my-border-color);
+}
+.el-tree{
+  border-radius: 5px;
+  background-color: var(--my-dark-bgcolor);
+  color: var(--my-font-color);
+  border: 1px solid var(--my-border-color);
+  max-height: 80vh;
+  overflow: auto;
+}
+
+
+.tab-row{
+  color: var(--my-font-color);
+}
+.el-table{
+  background-color: var(--my-dark-bgcolor);
+  border: 1px solid var(--my-border-color);
+}
+.el-table tr{
+  background-color: var(--my-dark-bgcolor);
+}
+.el-table th.el-table__cell{
+  background-color: var(--my-dark-bgcolor);
+}
+.el-table th.el-table__cell.is-leaf{
+  border-bottom: 1px solid var(--my-border-color);
+}
+.el-table td.el-table__cell{
+  border-bottom: 1px solid var(--my-border-color);
+}
+.tab-header{
+  
+}
+
+/* 滚动条 */
+::-webkit-scrollbar{
+  width: 5px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #ccc;
+}
+::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background: transparent;
+}
